@@ -1,0 +1,4 @@
+node_modules/
+do_not_commit/
+.DS_Store
+.env

@@ -1,0 +1,21 @@
+{
+  "name": "simple-node-app",
+  "version": "1.0.0",
+  "description": "Simple node app for helping myself quickly run node script locally.",
+  "main": "app.js",
+  "scripts": {
+    "build": "node app.js",
+    "start": "npm run build && run-p watch:**",
+    "watch:js": "chokidar 'app.js' -c 'npm run build'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mavis Ou (https://github.com/mmmavis)",
+  "license": "MIT",
+  "dependencies": {
+    "npm-run-all": "^4.0.2"
+  },
+  "devDependencies": {
+    "chokidar": "^1.7.0",
+    "chokidar-cli": "^1.2.0"
+  }
+}
